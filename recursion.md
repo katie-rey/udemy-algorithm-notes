@@ -25,7 +25,7 @@ When we write recursive functions we keep pushing new functions onto the stack
 ### Example
 
 - Recursive Version
-
+```
   function countDown(num){
   if(num <= 0) {
   console.log("All done!");
@@ -36,6 +36,7 @@ When we write recursive functions we keep pushing new functions onto the stack
   countDown(num);
   }
   countDown(3)
+```
 
 - Iterative Version
 
