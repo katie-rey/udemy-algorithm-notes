@@ -39,25 +39,27 @@ When we write recursive functions we keep pushing new functions onto the stack
 ```
 
 - Iterative Version
-
+```
   function countDown(num){
   for(var i = num; i > 0; i--){
   console.log(i);
   }
   console.log("All done!")
   }
+```
 
 - Recursive function
-
+```
 function sumRange(num) {
 if (num === 1) return 1,
 return num + sumRange(num-1)
 }
+```
 
 ### Factorial Examples
 
 #### Iteratively
-
+```
 function factorial(num){
 let total = 1;
 for(let i = num; i > 1; i--){
@@ -65,13 +67,15 @@ total \*= i
 }
 return total;
 }
+```
 
 #### Recursively
-
+```
 function factorial(num){
 if (num === 1) return 1
 return num \* factorial(num-1)
 }
+```
 
 - Always remember to include a base case
 - Always include a return
@@ -83,7 +87,7 @@ Otherwise you may end up with a stack overflow.
 Creating a helper method defined inside a function
 
 E.g.
-
+```
 function collectOddValues(arr){
 
     let result = [];
@@ -99,6 +103,7 @@ function collectOddValues(arr){
 
         helper(helperInput.slice(1))
     }
+    ```
 
     helper(arr)
 
