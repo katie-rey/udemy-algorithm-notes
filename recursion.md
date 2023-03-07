@@ -53,9 +53,9 @@ if (num === 1) return 1,
 return num + sumRange(num-1)
 }
 
-## Factorial Examples
+### Factorial Examples
 
-# Iteratively
+#### Iteratively
 
 function factorial(num){
 let total = 1;
@@ -65,7 +65,7 @@ total \*= i
 return total;
 }
 
-# Recursively
+#### Recursively
 
 function factorial(num){
 if (num === 1) return 1
@@ -77,7 +77,7 @@ return num \* factorial(num-1)
 
 Otherwise you may end up with a stack overflow.
 
-## Helper Method Recursion
+#### Helper Method Recursion
 
 Creating a helper method defined inside a function
 

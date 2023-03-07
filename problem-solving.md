@@ -7,7 +7,7 @@ A process or set of steps to accomplish a task
 3. Solve or simplify the problem
 4. Refactor
 
-## Understand the problem
+### Understand the problem
 
 1. Restate the problem in your owns words
 2. What are the inputs
@@ -15,7 +15,7 @@ A process or set of steps to accomplish a task
 4. Can the outputs be determined from the inputs
 5. How should I label the important pieces of data that are part of the problem
 
-## Break it down
+### Break it down
 
 - Write input examples
 - Ask questions that crop up to get clarity
@@ -23,14 +23,14 @@ A process or set of steps to accomplish a task
 
 **Solve the problem, if you can't solve a simpler problem!!!**
 
-## Solve of simplify
+### Solve of simplify
 
 - Find the difficulty
 - Ignore the difficulty
 - Write a simplified solution
 - Then incorporate the difficulty back in
 
-## Refactor
+### Refactor
 
 - Can you check results
 - Can you find a different solution

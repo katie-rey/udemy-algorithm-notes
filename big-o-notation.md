@@ -58,14 +58,14 @@ Simplifying down
 
 e.g. O(n² + 5n + 8) = O(n²)
 
-## Auxiliary Space Complexity
+### Auxiliary Space Complexity
 
 what happens to the space that an algorithm takes up as the size of the input increases.
 
 A for loop and a console log = O(1)
 A for loop which creates a new array = O(n) the size of the initial array will be the same size as the new array (proportionate)
 
-## Logarithms
+### Logarithms
 
 Some algorithms, sorting algorithms and recursion involve logarithmic time complexity
 
