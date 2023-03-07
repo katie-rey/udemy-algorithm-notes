@@ -1,0 +1,5 @@
+- A Set is a collection of values with each value only occuring once
+- The JavaScript prototype property allows you to add new properties to object constructors
+- this is a keyword that (in non-strict mode) always refers to an object
+- The call stack is a stck data structure. Anytime a function is invoked, it's placed on the top of the call stack.
+-

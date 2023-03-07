@@ -229,10 +229,6 @@ function areThereDuplicates(...args) {
 
 // areThereDuplicates One Liner Solution
 
-//  A Set is a collection of values with each value only occuring once
-// The JavaScript prototype property allows you to add new properties to object constructors
-// this is a keyword that (in non-strict mode) always refers to an object
-
 function areThereDuplicates() {
   return new Set(arguments).size !== arguments.length
 }
@@ -251,4 +247,45 @@ function areThereDuplicates() {
   return false
 }
 
-//
+// Recursion
+
+function countDown(num) {
+  if (num <= 0) {
+    console.log('All done!')
+    return
+  }
+  console.log(num)
+  num--
+  countDown(num)
+}
+countDown(3)
+
+function sumRange(num) {
+  if (num === 1) return 1
+  return num + sumRange(num - 1)
+}
+
+// Helper Method Recursion  
+
+function collectOddValues(arr){
+    
+  let result = [];
+
+  function helper(helperInput){
+      if(helperInput.length === 0) {
+          return;
+      }
+      
+      if(helperInput[0] % 2 !== 0){
+          result.push(helperInput[0])
+      }
+      
+      helper(helperInput.slice(1))
+  }
+  
+  helper(arr)
+
+  return result;
+}
+
+collectOddValues([1,2,3,4,5,6,7,8,9])

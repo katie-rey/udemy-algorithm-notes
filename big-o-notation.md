@@ -1,34 +1,42 @@
-## Analyzing complexity with Big O notation to evaluate runtime or time complexity
+### Analyzing complexity with Big O notation to evaluate runtime or time complexity
 
 To analyze performance of an algorithm, we use big O notation.
 As the size of an input grows, we want to know how the runtime changes or how the space complexity changes.
 Not about precision, just general trends.
 Time and space complexity as measured by Big O depends only on the algorithm, not on the hardware.
 
-_code performance_
-_trade-offs_
-_identifying slow code and performance_
+## Benefits / The why
 
-// Faster
-// less memory-intensive
-// more readable
+- Improve vocabulary of code performance
+- Useful for discussing algorithm trade-offs
+- Identifying slow code and performance
+
+## What does better code mean?
+
+- Faster
+- Less memory-intensive
+- More readable
 
 performance.now()
 
-// count operations
+## The how
 
-additions
-assignments
-comparisons
+- Count operations in terms of a fuzyy overview
+- Reduce n \* 10 to n operations
+- As n grows the number of operations grow according to n
 
-// as n grows the number of operations grow according to n
+# Different types of operations:
 
-// big o notation is a way of formalizing fuzzy counting
-// it allows us to formally talk about how the runtime of an algorithm grows as the inputs grow
+- Additions
+- Assignments
+- Comparisons
 
-// We say that an algorithm of awe is big O of F of MN.
+## Overview
 
-// If the number of simple operations the computer has to do is eventually less than a constant times f
+Big o notation is a way of formalizing fuzzy counting
+It allows us to formally talk about how the runtime of an algorithm grows as the inputs grow
+
+# We say that an algorithm of O(f(n)) if the number of simple operations the computer has to do is eventually less than a constant times f(n), as n increases.
 
 // of MN as MN increases.
 
