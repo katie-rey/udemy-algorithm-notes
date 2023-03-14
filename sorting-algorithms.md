@@ -31,3 +31,11 @@ Compare two integers side by side and swap or bubble to the top the largets inte
 Repeat moving through the array, comparing two side by side numbers. On each iteration, the largest number will shift or move to the top or right side of the array.
 
 Under the hood, many sorting alogirhtms include a swapping function.
+
+### Selection Sort
+
+Not that efficient O(n2) quadratic. As the length of the arary grows, the number of comparisons grow roughlt at a rate of n x n.
+
+Where selection sort is better than bubble sort, we only make one swap at the end of the loop, if you were concerned about writing to memory, selection sort would be more efficient.
+
+### Insertion Sort
