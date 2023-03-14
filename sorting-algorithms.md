@@ -59,4 +59,31 @@ Is quadratic n2.
 
 If we have a nearly sorted array, this algorithm sorts more efficiently.
 
-Also works as an online algorithm - where we are receiving a continuous feed of live data.
+Also works as an online algorithm - where we are receiving a continuous feed of live data and need to keep the data sorted.
+
+---
+
+All the above have average time complexities that are quadratic.
+Better, more efficient = more complex algorithms.
+
+### Merge Sort
+
+Splitting up, merging and sorting
+Exploits the fact that arrays of 0 or 1 element are alays sorting
+Divides and conquers arrays, splitting into smaller arrays until you get to an array of 1.
+Compares two arrays and sorts and merges them, this progess continues for both left and right seperated array.
+Finally both arrays are merged together.
+
+[2, 5, 7, 1, 9, 6, 3, 8]
+
+[2, 5, 7, 1] [9, 6, 3, 8]
+
+[2, 5] [7, 1] [9, 6] [3, 8]
+
+[2] [5] [7] [1] [9] [6] [3] [8] Seperated out into smallest array
+
+[2, 5] [1, 7] [6, 9] [3, 8] Sorts and merges 2 x arrays
+
+[1, 2, 5, 7] [3, 6, 8, 9] Sorted left and rght arrays
+
+[1, 2, 3, 5, 6, 7, 8, 9] Finally sorts and merges together both arrays
