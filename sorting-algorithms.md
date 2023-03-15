@@ -68,10 +68,12 @@ Better, more efficient = more complex algorithms.
 
 ### Merge Sort
 
+```
 **Time complexity best - O(n log n)**
 **Time complexity average - O(n log n)**
 **Time complexity worst - O(n log n)**
 Space complexity - O(n)
+```
 
 - will still perform the same functions regardless of how sorted or unsorted the data is
 - Big O of Merge Sort = O(n log n)
