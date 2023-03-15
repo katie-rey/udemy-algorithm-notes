@@ -68,6 +68,20 @@ Better, more efficient = more complex algorithms.
 
 ### Merge Sort
 
+**Time complexity best - O(n log n)**
+**Time complexity average - O(n log n)**
+**Time complexity worst - O(n log n)**
+Space complexity - O(n)
+
+- will still perform the same functions regardless of how sorted or unsorted the data is
+- Big O of Merge Sort = O(n log n)
+- O(log n) decompositions
+- O(n) comparisons per decomposition
+- 2 of what power gives us n
+- if 8 elements, 2 power of 3 (3 decompositions of the arrays to arrive at single element arrays)
+- if 32 elements, 2 power of 5 gives us 32 (5 decompositions (break downs or seperations in halves))
+- When merging, as n grows the merge algorithm grows. If there are 8 items in the array, there will be approximately 8 comparisons that need to be made.
+
 Splitting up, merging and sorting
 Exploits the fact that arrays of 0 or 1 element are alays sorting
 Divides and conquers arrays, splitting into smaller arrays until you get to an array of 1.

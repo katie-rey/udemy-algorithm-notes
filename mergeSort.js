@@ -60,7 +60,7 @@ function merge(arr1, arr2) {
 merge([100, 200], [1, 2, 3, 5, 6])
 
 // Cleaner version using Conditional (ternary) operator
-function mergeSort(arr1, arr2) {
+function mergeHelp(arr1, arr2) {
   let i = 0,
     j = 0,
     newArr = []
@@ -74,3 +74,19 @@ function mergeSort(arr1, arr2) {
 }
 
 // Part Two!
+// Pseudocode
+
+// Break up the array into half using slice
+// Break up each half up again recursively until you reach the base case
+// Base case = array <= 1
+// Merge and sort smaller arrays together until you are back to the full length og the array
+
+function mergeSort(arr) {
+  if (arr.length <= 1) return arr
+  let mid = Math.floor(arr.length / 2)
+  let left = mergeSort(arr.slice(0, mid))
+  let right = mergeSort(arr.slice(mid))
+  return mergeHelp(left, right)
+}
+
+mergeSort([10, 24, 76, 73, 72, 1, 9])
