@@ -1,7 +1,7 @@
 // Pseudocode Pivot Helper
 
-// Best case scenario would be to choose the median valuein the array
-// This csn be difficult to decipher so we are in this case going to use the first value in the array. This will have an impact on the algo's big o.
+// Best case scenario would be to choose the median value in the array
+// This can be difficult to decipher so we are in this case going to use the first value in the array. This will have an impact on the algo's big o.
 
 // Accept three arguments: an array, a start index and an end index
 // Grab the pivot from the start of the array
@@ -13,12 +13,13 @@
 
 // View visualgo.net for a walkthrough of the algo
 
-// Creat pivotIndex var
+// Create pivotIndex var
 // Pick first el
 // Loop through rest of array
 // Swap if curr el is smaller and needs to be on the left of the pivot
 // increment index var
 // Swap pivot with index var
+// Return pivot index
 
 function pivotHelper(arr, start = 0, end = arr.length + 1) {
   var pivotIndex = 0
@@ -38,7 +39,7 @@ function pivotHelper(arr, start = 0, end = arr.length + 1) {
       // arr[pivotIndex] = arr[i]
     }
   }
-  return arr
+  return pivotIndex
 }
 
 pivotHelper([28, 41, 4, 11, 16, 1])
@@ -97,3 +98,22 @@ function pivot(arr, start = 0, end = arr.length - 1) {
 }
 
 pivot([4, 8, 2, 1, 5, 7, 6, 3])
+
+// Quick Sort Pseudocode
+
+// Pivot Helper returns the sorted index
+// Call the piviot helper on the array at beginning and return first pivot point
+// Recursively call the pivot helper on the left and right side subarray's
+
+function quickSort(arr, left = 0, right = arr.length - 1) {
+  if (left < right) {
+    let pivotIndex = pivot(arr, left, right)
+    // left
+    quickSort(arr, left, pivotIndex - 1)
+    // right
+    quickSort(arr, pivotIndex + 1, right)
+  }
+  return arr
+}
+
+quickSort([4, 6, 9, 1, 2, 5, 3])

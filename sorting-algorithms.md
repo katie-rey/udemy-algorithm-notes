@@ -70,8 +70,8 @@ Better, more efficient = more complex algorithms.
 
 **Time complexity best - O(n log n)**
 **Time complexity average - O(n log n)**
-**Time complexity worst - O(n log n)**
-Space complexity - O(n)
+**Time complexity worst - O(n2)**
+Space complexity - O(n log n)
 
 - Will still perform the same functions regardless of how sorted or unsorted the data is
 - Big O of Merge Sort = O(n log n)
@@ -108,3 +108,41 @@ Like merge sort, exploits the fact that arrays of 0 or 1 element are alays sorti
 Chooses the first element in the array and deciphers whether the other elements should sit before or after.
 The chosen element is then moved to its correct index in the array - also called the pivot point
 It then sorts the left hand side in a similar way.
+
+**Time complexity best - O(n log n)**
+**Time complexity average - O(n log n)**
+**Time complexity worst - O(n2)**
+Space complexity - O(log n)
+
+Best Case - Time
+As n grows we need to make O(log n) decompositions
+
+| 8
+| 4 12
+| 2 6 10 14
+| 1 3 5 7 9 11 13 15
+V
+
+O(log n) decompositions
+O(n) comparisons per decomposition
+
+Worst Case - Time
+If we have an initial sorted array and use arr[0] as the pivot (first item in the array), with each decomposition we are pivoting on only one item
+
+| 1, 2, 3, 4, 5, 6, 7, 8
+|
+| 1
+| [2, 3, 4, 5, 6, 7, 8]
+|
+| 1
+| 2
+| [3, 4, 5, 6, 7, 8]
+|
+| 1
+| 2
+| 3
+| [4, 5, 6, 7, 8]
+v
+O(n) decompositions
+
+To avoid this, we could select the median or a random number.
