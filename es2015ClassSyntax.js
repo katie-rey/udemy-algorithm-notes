@@ -9,10 +9,23 @@ class Student {
     this.firstName = firstName
     this.lastName = lastName
     this.grade = year
+    this.late = 0
+    this.scores = []
   }
   // here we are defing a method
   fullName() {
     return `Your full name is ${this.firstName} ${this.lastName}`
+  }
+  markLate() {
+    this.late += 1
+    if (this.late >= 3) {
+      return 'You are expelled!!'
+    }
+    return `${this.firstName} ${this.lastName} has been late ${this.late} times`
+  }
+  addScore(score) {
+    this.scores.push(score)
+    return this.scores
   }
 }
 
@@ -40,7 +53,14 @@ katie.firstName = 'Catie'
 // Instance methods
 
 // Pertains functionally on a single instance (in this case student)
-//  We can create new methods that correspond to individual instances not the class level
+// We can create new methods that correspond to individual instances not the class level
 
-// Calling the method in the instance
+// Calling the instance method in the instance (katie)
 katie.fullName()
+
+// Executing the markLate instance method
+katie.markLateInstance()
+
+katie.late = 1
+
+katie.addScore(34)
