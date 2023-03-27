@@ -147,7 +147,8 @@ O(n) decompositions
 
 To avoid this, we could select the median or a random number.
 
-## Radix Sort 
+## Radix Sort
+
 (integer sort)
 
 Works on lists of numbers.
@@ -159,3 +160,11 @@ e.g. a four digit number is larger than a three digit number
 Starts with the right most digit and places the number into a 'bucket' of digits starting from 0.
 
 0 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+
+**Time complexity best - O(nk)**
+**Time complexity average - O(nk)**
+**Time complexity worst - O(nk)**
+Space complexity - O(n + k)
+
+where n = length of the array
+where k = numbers of digits(average)
