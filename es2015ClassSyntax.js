@@ -27,6 +27,9 @@ class Student {
     this.scores.push(score)
     return this.scores
   }
+  static enrollStudents() {
+    return 'Enrolling students!'
+  }
 }
 
 // We need to instantiate using instances of this class
@@ -64,3 +67,34 @@ katie.markLateInstance()
 katie.late = 1
 
 katie.addScore(34)
+
+////////////////////////////////////////////////////////////////
+
+// Class Methods
+
+// uses the static keyword
+
+// They are not related to a specific instance and connot be called through an instance of the class, instead they are accessed on the class itself
+// They are often used to create utility functions for an application (e.g. sending emails to all users)
+
+Student.enrollStudents()
+
+// Example two
+class Point {
+  constructor(x, y) {
+    this.x = x
+    this.y = y
+  }
+
+  static distance(a, b) {
+    const dx = a.x - b.x
+    const dy = a.y - b.y
+
+    return Math.hypot(dx, dy)
+  }
+}
+
+const p1 = new Point(5, 5)
+const p2 = new Point(10, 10)
+
+console.log(Point.distance(p1, p2)) // 7.0710678118654755
