@@ -82,8 +82,8 @@ Space complexity - O(n log n)
 - If 32 elements, 2 power of 5 gives us 32 (5 decompositions (break downs or seperations in halves))
 - When merging, as n grows the merge algorithm grows. If there are 8 items in the array, there will be approximately 8 comparisons that need to be made.
 
-Splitting up, merging and sorting
-Exploits the fact that arrays of 0 or 1 element are alays sorting
+Splitting up, merging and sorting.
+Exploits the fact that arrays of 0 or 1 element are alays sorting.
 Divides and conquers arrays, splitting into smaller arrays until you get to an array of 1.
 Compares two arrays and sorts and merges them, this progess continues for both left and right seperated array.
 Finally both arrays are merged together.
@@ -104,9 +104,9 @@ Finally both arrays are merged together.
 
 ## Quick Sort
 
-Like merge sort, exploits the fact that arrays of 0 or 1 element are alays sorting
+Like merge sort, exploits the fact that arrays of 0 or 1 element are alays sorting.
 Chooses the first element in the array and deciphers whether the other elements should sit before or after.
-The chosen element is then moved to its correct index in the array - also called the pivot point
+The chosen element is then moved to its correct index in the array - also called the pivot point.
 It then sorts the left hand side in a similar way.
 
 **Time complexity best - O(n log n)**
@@ -127,7 +127,7 @@ O(log n) decompositions
 O(n) comparisons per decomposition
 
 Worst Case - Time
-If we have an initial sorted array and use arr[0] as the pivot (first item in the array), with each decomposition we are pivoting on only one item
+If we have an initial sorted array and use arr[0] as the pivot (first item in the array), with each decomposition we are pivoting on only one item.
 
 | 1, 2, 3, 4, 5, 6, 7, 8
 |
@@ -146,3 +146,16 @@ v
 O(n) decompositions
 
 To avoid this, we could select the median or a random number.
+
+## Radix Sort 
+(integer sort)
+
+Works on lists of numbers.
+It never makes comaprisons between elements.
+It never asks what's what's smaller, what's larger.
+Instead, it exploits the fact that information about the size of a number is encoded in the number of digits.
+e.g. a four digit number is larger than a three digit number
+
+Starts with the right most digit and places the number into a 'bucket' of digits starting from 0.
+
+0 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
