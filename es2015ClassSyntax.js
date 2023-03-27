@@ -98,3 +98,18 @@ const p1 = new Point(5, 5)
 const p2 = new Point(10, 10)
 
 console.log(Point.distance(p1, p2)) // 7.0710678118654755
+
+// Recap
+
+//  The this. keyword behaves a bit different than normal.
+//  Inside of any instance method or the constructor, the keyword this. refers to the object created from that class, also know as the instance,
+
+// Classes are blueprints that, when created, make objects known as instances.
+
+// Classes are created or instantiated with the new keyword.
+
+// The constructor function is a special function that gets run when the class is instantiated.
+
+// When you run new student, the student constructor is run.
+
+// Instance methods can be added to classes similar to methods and objects, and class methods can be added with a static keyword.
