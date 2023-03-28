@@ -1,3 +1,6 @@
+// Javascript's syntactic sugar to look like OOP (object oriented programming)
+
+
 // A class is a blueprint for creating objects with pre-defined properties and methods.
 // We create a mould that we then pass in data too.
 // Definig the class is just the pattern. We will need to create the data using new and call methods on it.
