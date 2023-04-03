@@ -214,7 +214,7 @@ var list = new SinglyLinkedList()
 
 // Get method takes a number and returns the value at that position
 
-// Set changes the value of a node based in ots position in the Linked List
+// Set changes the value of a node based in its position in the Linked List
 
 // Insert adds a value at a specific index
 

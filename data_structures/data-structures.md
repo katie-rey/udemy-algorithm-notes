@@ -30,4 +30,18 @@ Time complexity average - O(n2)
 Time complexity worst - O(n2)
 Space complexity - O(1)
 
-**Bold**
+### Doubly Linked Lists
+
+Each node has two pointers, pointing to the previous and next item.
+A DLL still has a head and a tail.
+
+The trade off is we use more memory however we have more flexiblity.
+Takes half the time when searching.
+Can we easier to navigate but comes at a cost by taking up more memory.
+
+**Big O of DLL**
+
+Insertion - O(1)
+Removal - O(1)
+Searching - O(n) technically searching is O(n/2) however this simplifies to O(n)
+Accessing - O(n)
