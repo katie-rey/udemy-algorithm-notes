@@ -45,3 +45,14 @@ Insertion - O(1)
 Removal - O(1)
 Searching - O(n) technically searching is O(n/2) however this simplifies to O(n)
 Accessing - O(n)
+
+### Stacks and Queues
+
+Both are abstract collections of data.
+They both folowwo the LIFO model (last in first out).
+
+Why are they used?
+
+- Manage function invocations
+- Undo/redo
+- Routing (the history object in your browser) is treated like a stack.
