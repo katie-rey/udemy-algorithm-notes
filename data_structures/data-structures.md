@@ -87,4 +87,50 @@ Accessing - O(n)
 
 What is a tree?
 
-A branching structure of nodes with a parent/child relationship
+A branching structure of nodes with a parent/child relationship.
+A main brancg with branching structures.
+Lists are linear, trees are non-linear.
+A node an only point to a child. Every node is moving away from the parent node.
+We also need to have one entry point - the root.
+
+**Terminology**
+
+Root - The top node in a tree.
+Child - A node connected to another node when moving away from the root.
+Parent - The converse notion to a child.
+Siblings - A group of nodes connected to the same parent.
+Leaf - A node with no children.
+Edge - The connection between nodes.
+
+**Used cases**
+
+- HTML DOM
+- Network routing
+- Artificial Intelligence (e.g. a decision tree in a tic-tac-toe AI game)
+- Computer file systems
+- JSON
+
+There are lots of different types of trees with different rules. We will be focusing on binary trees and binary search trees.
+
+### Binary Search Trees
+
+Can only have up to two children and are ordered.
+All numbers/nodes to the left must be less than the parent node.
+All nodes to the right must be greater than the parent node.
+
+### Binary Tree
+
+As above but unordered
+
+**Big O of BST**
+
+Insertion - O(log N) (log2 of n simplified)
+Searching - O(log N)
+**Not guaranteed**
+
+### Tree Traversal
+
+There are two ways to traverse an unordered tree:
+
+- Breadth First
+- Depth First
