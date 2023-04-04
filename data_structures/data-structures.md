@@ -46,13 +46,45 @@ Removal - O(1)
 Searching - O(n) technically searching is O(n/2) however this simplifies to O(n)
 Accessing - O(n)
 
-### Stacks and Queues
+### Stacks (and queue's)
 
 Both are abstract collections of data.
-They both folowwo the LIFO model (last in first out).
+Stacks follow the LIFO model (last in first out).
 
 Why are they used?
 
 - Manage function invocations
 - Undo/redo
 - Routing (the history object in your browser) is treated like a stack.
+
+**Big O of Stacks**
+
+Insertion - O(1)
+Removal - O(1)
+Searching - O(n)
+Accessing - O(n)
+
+### Queues
+
+Queue's follow the FIFO (first in first out) model.
+Examples of using this model:
+
+- Waiting in line
+- Waiting to join a video game (who gets added first)
+- Uploading or downloading a file
+- A print queue (university or public libray - print first gets printed first)
+
+Why are they used?
+
+**Big O of Queues**
+
+Insertion - O(1) constant time
+Removal - O(1) constant time
+Searching - O(n)
+Accessing - O(n)
+
+### Trees, Binary Trees and Binary Search Trees
+
+What is a tree?
+
+A branching structure of nodes with a parent/child relationship
