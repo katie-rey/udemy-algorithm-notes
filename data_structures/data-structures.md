@@ -130,7 +130,31 @@ Searching - O(log N)
 
 ### Tree Traversal
 
-There are two ways to traverse an unordered tree:
+There are four ways to traverse an unordered tree:
 
 - Breadth First
-- Depth First
+  Left to right, top to bottom
+  []
+
+Depth First - PreOrder
+Top to bottom, left to right
+[]
+
+- Depth First - PostOrder
+  Bottom to top, left to right
+  []
+
+- Depth First - InOrder
+  Left to right, bottom to top
+  []
+
+**Big O BFS V DFS**
+
+Where we have a wide binary tree with many nodes, BFS will need to keep track of and add to the queue many more nodes than DFS.
+The space complexity will be greater.
+Time complexity is the same as each method will traverse all nodes.
+
+Insertion - O(1) constant time
+Removal - O(1) constant time
+Searching - O(n)
+Accessing - O(n)
