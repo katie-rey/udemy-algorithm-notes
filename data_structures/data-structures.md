@@ -20,15 +20,15 @@ We don't need to re-index with insertion and deletion as with an array (which cn
 
 **Big O of SLL**
 
-Insertion - O(1)
-Removal - best case O(1) / worst case O(n)
-Searching - O(n)
-Accessing - O(n)
+- Insertion - O(1)
+- Removal - best case O(1) / worst case O(n)
+- Searching - O(n)
+- Accessing - O(n)
 
-Time complexity best - O(n) (almost sorted data)\*\*
-Time complexity average - O(n2)
-Time complexity worst - O(n2)
-Space complexity - O(1)
+- Time complexity best - O(n) (almost sorted data)\*\*
+- Time complexity average - O(n2)
+- Time complexity worst - O(n2)
+- Space complexity - O(1)
 
 ### Doubly Linked Lists
 
@@ -41,10 +41,10 @@ Can we easier to navigate but comes at a cost by taking up more memory.
 
 **Big O of DLL**
 
-Insertion - O(1)
-Removal - O(1)
-Searching - O(n) technically searching is O(n/2) however this simplifies to O(n)
-Accessing - O(n)
+- Insertion - O(1)
+- Removal - O(1)
+- Searching - O(n) technically searching is O(n/2) however this simplifies to O(n)
+- Accessing - O(n)
 
 ### Stacks (and queue's)
 
@@ -59,10 +59,10 @@ Why are they used?
 
 **Big O of Stacks**
 
-Insertion - O(1)
-Removal - O(1)
-Searching - O(n)
-Accessing - O(n)
+- Insertion - O(1)
+- Removal - O(1)
+- Searching - O(n)
+- Accessing - O(n)
 
 ### Queues
 
@@ -78,20 +78,20 @@ Why are they used?
 
 **Big O of Queues**
 
-Insertion - O(1) constant time
-Removal - O(1) constant time
-Searching - O(n)
-Accessing - O(n)
+- Insertion - O(1) constant time
+- Removal - O(1) constant time
+- Searching - O(n)
+- Accessing - O(n)
 
 ### Trees, Binary Trees and Binary Search Trees
 
 What is a tree?
 
-A branching structure of nodes with a parent/child relationship.
-A main brancg with branching structures.
-Lists are linear, trees are non-linear.
-A node an only point to a child. Every node is moving away from the parent node.
-We also need to have one entry point - the root.
+- A branching structure of nodes with a parent/child relationship.
+- A main brancg with branching structures.
+- Lists are linear, trees are non-linear.
+- A node an only point to a child. Every node is moving away from the parent node.
+- We also need to have one entry point - the root.
 
 **Terminology**
 
@@ -124,37 +124,45 @@ As above but unordered
 
 **Big O of BST**
 
-Insertion - O(log N) (log2 of n simplified)
-Searching - O(log N)
+- Insertion - O(log N) (log2 of n simplified)
+- Searching - O(log N)
+
 **Not guaranteed**
 
 ### Tree Traversal
+
+Tree example:
+------ 10
+--- 6 ---- 15
+3 --- 8 ------- 20
 
 There are four ways to traverse an unordered tree:
 
 - Breadth First
   Left to right, top to bottom
-  []
+  [10, 6, 15, 3, 8, 20]
 
-Depth First - PreOrder
-Top to bottom, left to right
-[]
+- Depth First - PreOrder (good for exporting a tree structure for cloning/flattening and repurposing at a later date)
+  Top to bottom, left to right
+  [10, 6, 3, 8, 15, 20]
 
 - Depth First - PostOrder
   Bottom to top, left to right
-  []
+  [3, 8, 6, 20, 15, 10]
 
-- Depth First - InOrder
+- Depth First - InOrder (good for generating an ordred list)
   Left to right, bottom to top
-  []
+  [3, 6, 8, 10, 15, 20]
 
 **Big O BFS V DFS**
 
-Where we have a wide binary tree with many nodes, BFS will need to keep track of and add to the queue many more nodes than DFS.
-The space complexity will be greater.
-Time complexity is the same as each method will traverse all nodes.
+Where we have a wide binary tree with many nodes, BFS will need to keep track of and add to the queue many more nodes than DFS. The space complexity will be greater.
+A deep long tree, BFS will be more efficient and reduce space complexity.
+Time complexity is the same as each method will traverse all nodes once.
 
-Insertion - O(1) constant time
-Removal - O(1) constant time
-Searching - O(n)
-Accessing - O(n)
+### Recap
+
+- Trees are non-linear and contain a root and child nodes
+- Binary Trees can have any value types but at most two children for each parent
+- Binary Search Trees are more specific, nodes to the left are less, nodes to the right are greater
+- We can serach Trees using BFS and DFS
