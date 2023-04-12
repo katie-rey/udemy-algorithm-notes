@@ -166,3 +166,12 @@ Time complexity is the same as each method will traverse all nodes once.
 - Binary Trees can have any value types but at most two children for each parent
 - Binary Search Trees are more specific, nodes to the left are less, nodes to the right are greater
 - We can serach Trees using BFS and DFS
+
+### Heaps and Binary Heaps
+
+MaxBinaryHeap
+
+- Each parent has at most two child nodes
+- Value of parent node is always greater than the value of child node
+- No relationship between children nodes (left and right as per a BST does not count here)
+- BH is as compact as possible, children nodes are as full as possible and are filled out left first
