@@ -171,7 +171,50 @@ Time complexity is the same as each method will traverse all nodes once.
 
 MaxBinaryHeap
 
-- Each parent has at most two child nodes
-- Value of parent node is always greater than the value of child node
-- No relationship between children nodes (left and right as per a BST does not count here)
+- Each parent has at most **two** child nodes
+- Value of parent node is always **greater** than the value of child node
+- No relationship between children nodes (left and right as per a BST does not count here) e.g. left is not less and right is not greater
 - BH is as compact as possible, children nodes are as full as possible and are filled out left first
+
+MBH example:
+.......100
+...19------26
+17---3...25---1
+
+MinBinaryHeap
+
+- Each parent has at most two child nodes
+- Value of parent node is always **less** than the value of child node
+
+### Priority Queue
+
+A data structure where each element has a priority.
+Elements with higher priorities are served before elements with lower priority.
+
+An example of a priority queue could be a doctors waiting room (gunshot wound (walking in last) has a higher priority than the flu, or a broken finger!)
+
+Using a max binary heap with a priority queue (abstract concept) is much quicker than a list
+
+**Big O of Binary Heaps**
+
+- Insertion - O(log n)
+- Removal - O(log n)
+- Searching - O(n) (not best use for searching)
+- Accessing - O(n)
+
+For 16 elements there are only 4 comparisons. One time per row. (2 to the power of 4 gives us 16)
+For 32 elemenst there are only 5 comparisons. (2 to the power of 5 gives us 32)
+
+Insertion is much quicker than a binary tree (worst case)
+
+**Recap**
+
+- Binary Heaps are very useful for sorting or implementing other data structues like priority queues
+- BH's are either MaxBinaryHeaps or MinBinaryHeaps with parents being smaller or larger than their children
+
+### Hash Tables
+
+Are used to store key-value pairs
+The keys are NOT ordered
+They are fast for all operations
+JS has Objects and Maps (objects have some restrictions (keys must be stored as strings, but are basically hash tables))
