@@ -218,3 +218,9 @@ Are used to store key-value pairs
 The keys are NOT ordered
 They are fast for all operations
 JS has Objects and Maps (objects have some restrictions (keys must be stored as strings, but are basically hash tables))
+
+What makes a good hash table
+
+- Fast (constant time)
+- Doesn't cluster outputs at specific indexes
+- Deterministic (same input yields the same output)
