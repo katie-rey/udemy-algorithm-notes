@@ -300,3 +300,22 @@ D: ["C", "A"]
 ### Graph traversal (visiting,checking each vertex in a graph)
 
 **Depth First Traversal**
+
+Iteratively works by starting at the end of the adjacency list not the beginning as with the DFS resursive solution i.e.
+We create our own call stack where B awaits on the bottome of the stack (as we are searching depth first)
+
+- Recursive = A -> B -> D -> E -> C -> F
+- Iterative = A -> C -> E -> F -> D -> B
+
+// A
+// / \
+// B C
+// | |
+// D --- E
+// \ /
+// F
+
+**Breadth First Traversal**
+
+We visit each vertex horizontally before vertically.
+We visit each neighbour vertex one edge away before its neighbours neighbours (ot two edge steps away)

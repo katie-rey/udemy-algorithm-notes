@@ -89,6 +89,39 @@ class Graph {
     }
     return result
   }
+  breadthFirstSearch(start) {
+    // pseudcode
+    // This function should accept a starting vertex
+    // Create a queue (you can use an array) and place the starting vertex in it
+    // Create an array to store the nodes visited
+    // Create an object to store nodes visited
+    // Mark the starting vertex as visited
+    // Loop as long as there is anything in the queue
+    // Remove the first vertex from the queue and push it into the array that stores nodes visited
+    // Loop over each vertex in the adjacency list for the vertex you are visiting.
+    // If it is not inside the object that stores nodes visited, mark it as visited and enqueue that vertex
+    // Once you have finished looping, return the array of visited nodes
+
+    let queue = [start]
+    let result = []
+    let visited = {}
+    visited[start] = true
+    let currVertex
+
+    while (queue.length) {
+      currVertex = queue.shift()
+      result.push(currVertex)
+      // below is an example of traversing breadth first in reverse (right to left)
+      // this.adjacencyList[currVertex].slice().reverse().forEach((el) => {
+      this.adjacencyList[currVertex].forEach((el) => {
+        if (!visited[el]) {
+          visited[el] = true
+          queue.push(el)
+        }
+      })
+    }
+    return result
+  }
 }
 
 let g = new Graph()
@@ -128,3 +161,5 @@ g.depthFirstRecursive('A')
 // g.addEdge('Hong Kong', 'Dallas')
 // g.addEdge('Los Angeles', 'Hong Kong')
 // g.addEdge('Los Angeles', 'Aspen')
+
+// Iteratively works by starting at the end of the adjacency list not the beginning as with the DFS resursive solution above
