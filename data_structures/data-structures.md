@@ -224,3 +224,79 @@ What makes a good hash table
 - Fast (constant time)
 - Doesn't cluster outputs at specific indexes
 - Deterministic (same input yields the same output)
+
+**Dealing with collisions**
+
+Seperate Chaining
+
+We can add more than one key-value pair in an array indexes by grouping together in a nested data structure.
+Can store more than the length of the array
+
+Linear Probing
+
+When we encounter a collision, we look ahead (or backwards) to the next empty spot.
+Can only store the length of the array.
+
+**Big O of Hash Tables (average case)**
+
+- Insertion - O(1)
+- Removal - O(1)
+<!-- - Searching - O(1)  -->
+- Accessing - O(1) (using a given key and finding the corresponding key/value pair in the array)
+
+### Graphs
+
+What are graphs
+
+A graph is a collection of nodes and connections.
+
+An example of its use would be a map (shortest distance), recommendations
+
+Vertex = a node
+Edge = connections between nodes
+Only one path two and from nodes
+
+**Undirected Graph**
+
+There is no direction or polarity of the edges in the graph
+You can traverse either way
+
+**Directed Graph**
+
+There is a direction allocated to the edge.
+It flows only one way.
+An example of this would be an Instagram Followers Graph
+
+**Unweighted v weighted graph**
+
+A weighted graph has a value assigned to the edges.
+As example of a weighted graph would be google maps (also a directed graph - think of one way streets).
+
+**Adjacency Matrix**
+
+- Takes up more space in sparse graphs
+- Slower to iterate over all edges
+- Can be faster to look up specific edge
+
+  A B C D
+  A 0 1 0 1
+  B 1 0 1 0
+  C 0 1 0 1
+  D 1 0 1 0
+
+**Adjacency List**
+
+- Can take up less space in sparse graphs
+- Faster to iterate over all edges
+- Can be slower to look up specific edge
+
+{
+A: ["D", "B"]
+B: ["A", "C"]
+C: ["B", "D"]
+D: ["C", "A"]
+}
+
+### Graph traversal (visiting,checking each vertex in a graph)
+
+**Depth First Traversal**
