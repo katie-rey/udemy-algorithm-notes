@@ -319,3 +319,19 @@ We create our own call stack where B awaits on the bottome of the stack (as we a
 
 We visit each vertex horizontally before vertically.
 We visit each neighbour vertex one edge away before its neighbours neighbours (ot two edge steps away)
+
+### Dijkstra's Algorithm
+
+Solves finding the shortest path from A to B on a graph.
+
+Edsger Dijkstra was a dutch programmer, physicist and computer programmer.
+He wrote many papers and created new fields which spawned off many new disciplines.
+
+Some of its uses are:
+
+- GPS
+- Network Routing
+- Airline Tickets
+- Biology - used to model the spread of viruses among humans
+
+We will need to build a weighted graph to implement the algorithm.
