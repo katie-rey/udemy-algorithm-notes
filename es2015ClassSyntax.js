@@ -1,6 +1,5 @@
 // Javascript's syntactic sugar to look like OOP (object oriented programming)
 
-
 // A class is a blueprint for creating objects with pre-defined properties and methods.
 // We create a mould that we then pass in data too.
 // Definig the class is just the pattern. We will need to create the data using new and call methods on it.
@@ -116,3 +115,5 @@ console.log(Point.distance(p1, p2)) // 7.0710678118654755
 // When you run new student, the student constructor is run.
 
 // Instance methods can be added to classes similar to methods and objects, and class methods can be added with a static keyword.
+
+

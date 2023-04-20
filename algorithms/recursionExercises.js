@@ -33,3 +33,12 @@ function fib(num) {
   if (num < 3) return 1
   return fib(num - 1) + fib(num - 2)
 }
+
+OR
+
+function fib(n) {
+  if (n === 2 || n === 1) return 1
+  return fib(n - 1) + fib(n - 2)
+}
+
+// BIG O = O(2n) = BAD!
